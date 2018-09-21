@@ -1,0 +1,20 @@
+{
+  "name": "node-js-sandbox",
+  "version": "1.0.0",
+  "description": "Node.js training.",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo OK"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grzesk075/NodeJsSandbox.git"
+  },
+  "author": "Grzegorz Kuprianowicz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/grzesk075/NodeJsSandbox/issues"
+  },
+  "homepage": "https://github.com/grzesk075/NodeJsSandbox#readme"
+}
