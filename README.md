@@ -28,7 +28,7 @@ You can create sample app and run it with
 
 > npm start
 
-Commands for: listing local packages, listing global packages, uninstall globally, initializing package.json, getting dependencies, starting and stopping main file - are below (consecjutive).
+Commands for: listing local packages, listing global packages, uninstall globally, initializing package.json, getting dependencies, testing, starting and stopping main file - are below (consecjutive).
 > npm ls
 
 > npm ls -g
@@ -39,10 +39,20 @@ Commands for: listing local packages, listing global packages, uninstall globall
 
 > npm install
 
+> npm test
+
 > npm start
 
 > npm stop
 
+Scripts named test, start and stop must be defined in package.json file.
+
 It's also possible to publish your package to the world and to make it searchable by `npm search` or more convinient way on [several pages like this one](http://npmsearch.com/). The license has to be public.
 
 You can also deploy your web application on cloud (e.g. Azure) or on Docker, or create desktop application with e.g. Electron framework.
+
+The top IDEs for development of Node.js based web applications are:
+* WebStorm from JetBrains (paid),
+* Visual Studio Code from Microsoft (free),
+* Eclipse with nodeclipse plugin (free),
+* Cloud9 from Amazon (in cloud free for non-commercial use).
