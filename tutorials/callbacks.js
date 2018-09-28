@@ -1,3 +1,8 @@
+/**
+ * Run in main project folder using a command as follows:
+ * node tutorials/callbacks.js
+ */
+
 var fs = require("fs");
 
 /**
