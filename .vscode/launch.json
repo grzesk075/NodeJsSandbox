@@ -14,7 +14,10 @@
             "type": "node",
             "request": "launch",
             "name": "Stream tutorial",
-            "program": "${workspaceFolder}/tutorials/streams.js"
+            "program": "${workspaceFolder}/tutorials/streams.js",
+            "args": [
+                "first", "second"
+            ]
         },
         {
             "type": "node",

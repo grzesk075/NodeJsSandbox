@@ -2,28 +2,30 @@
  * Stream concept tutorial.
  */
 
- var fs = require('fs');
- var zlib = require('zlib');
+var fs = require('fs');
+var zlib = require('zlib');
 
- const INTAKE = './tutorials/intake.txt';
- const OUTLET = './tutorials/intake.txt.gz';
+const INTAKE = './tutorials/intake.txt';
+const OUTLET = './tutorials/intake.txt.gz';
 
- var data = '';
+var data = '';
 
- var onError = function(err) {
+var onError = function(err) {
 
-    console.log(err);
- }
+console.log(err);
+}
 
- var onData = function(chunk) {
+var onData = function(chunk) {
 
-    data += chunk.toString();
- }
+data += chunk.toString();
+}
 
- var onEnd = function() {
+var onEnd = function() {
 
-    console.log(data);
- }
+console.log(data);
+}
+
+console.log('Program arguments: ' + process.argv);
 
 var readStream = fs.createReadStream(INTAKE);
 
@@ -35,7 +37,7 @@ fs.createReadStream(INTAKE).pipe(zlib.createGzip()).pipe(fs.createWriteStream(OU
 
 console.log(INTAKE + ' compressed to ' + OUTLET);
 
-console.log('Current dir content:');
+console.log('Current dir (' + __dirname + ') content:');
 fs.readdir('.',(err,files) => {
 
     if(err!=null)
