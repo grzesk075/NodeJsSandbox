@@ -34,3 +34,16 @@ readStream.on('end', onEnd);
 fs.createReadStream(INTAKE).pipe(zlib.createGzip()).pipe(fs.createWriteStream(OUTLET));
 
 console.log(INTAKE + ' compressed to ' + OUTLET);
+
+console.log('Current dir content:');
+fs.readdir('.',(err,files) => {
+
+    if(err!=null)
+        return console.error(err);
+
+    files.forEach(function(file) {
+
+        console.log(file);
+    });
+    console.log('End of current dir content.\n');
+});
