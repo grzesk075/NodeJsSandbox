@@ -7,6 +7,9 @@
     "start": "node main.js",
     "test": "echo OK"
   },
+  "dependencies": {
+    "express": "latest"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/grzesk075/NodeJsSandbox.git"
