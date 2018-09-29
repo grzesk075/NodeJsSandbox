@@ -4,18 +4,23 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-
         {
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}\\main.js"
+            "program": "${workspaceFolder}/main.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Stream tutorial",
+            "program": "${workspaceFolder}/tutorials/streams.js"
         },
         {
             "type": "node",
             "request": "launch",
             "name": "Callback tutorial",
-            "program": "${workspaceFolder}\\tutorials\\callbacks.js"
+            "program": "${workspaceFolder}/tutorials/callbacks.js"
         }
     ]
 }
