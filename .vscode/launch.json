@@ -24,6 +24,12 @@
             "request": "launch",
             "name": "Callback tutorial",
             "program": "${workspaceFolder}/tutorials/callbacks.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "REST tutorial",
+            "program": "${workspaceFolder}/tutorials/rest.js"
         }
     ]
 }
