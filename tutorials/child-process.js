@@ -4,6 +4,12 @@
  * Running child processes is available, 
  * but there is no sharing variables and functions like in thread concept.
  * Only standard streams and signals are available.
+ * Node.js runs single-threaded, 
+ * non-blocking, asynchronously programming, which is very memory efficient.
+ * It's designed for bulk I/O web applications, especially supported
+ * Single Page Application Concept. This approach is more efficient
+ * than Apache Tomcat with multithreading.
+ * Subprocesses are not needed to achieve this goals.
  */
 
 process.stdin.on('data', function(data) {
