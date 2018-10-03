@@ -17,7 +17,7 @@ console.log(err);
 
 var onData = function(chunk) {
 
-data += chunk.toString();
+    data += chunk.toString();
 }
 
 var onEnd = function() {

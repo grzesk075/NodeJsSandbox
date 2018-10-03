@@ -30,6 +30,12 @@
             "request": "launch",
             "name": "REST tutorial",
             "program": "${workspaceFolder}/tutorials/rest.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Subprocess tutorial",
+            "program": "${workspaceFolder}/tutorials/parent-process.js"
         }
     ]
 }
