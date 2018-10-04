@@ -1,5 +1,7 @@
 /**
  * There are no threads in Node.js.
+ * It is experimental worker_threads package for CPU-intense operations,
+ * what node.js is not designed for.
  * Concurency is supported by event emiters mechanism.
  * Running child processes is available, 
  * but there is no sharing variables and functions like in thread concept.
@@ -10,8 +12,8 @@
  * Single Page Application Concept. This approach is more efficient
  * than Apache Tomcat with multithreading.
  * Subprocesses are not needed to achieve this goals.
- * It is experimental 'worker_threads' package for CPU-intense operations,
- * what node.js is not designed for.
+ * To handle the load by all CPUs, one can use cluster package,
+ * based on fork method from child_processe module.
  */
 
 process.stdin.on('data', function(data) {
