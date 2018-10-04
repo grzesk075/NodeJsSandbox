@@ -36,6 +36,12 @@
             "request": "launch",
             "name": "Subprocess tutorial",
             "program": "${workspaceFolder}/tutorials/parent-process.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "File upload",
+            "program": "${workspaceFolder}/tutorials/file-upload.js"
         }
     ]
 }

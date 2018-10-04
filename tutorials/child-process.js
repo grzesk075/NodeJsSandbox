@@ -6,10 +6,12 @@
  * Only standard streams and signals are available.
  * Node.js runs single-threaded, 
  * non-blocking, asynchronously programming, which is very memory efficient.
- * It's designed for bulk I/O web applications, especially supported
+ * It's designed for I/O-intense web applications, especially supported
  * Single Page Application Concept. This approach is more efficient
  * than Apache Tomcat with multithreading.
  * Subprocesses are not needed to achieve this goals.
+ * It is experimental 'worker_threads' package for CPU-intense operations,
+ * what node.js is not designed for.
  */
 
 process.stdin.on('data', function(data) {
