@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- add mocha css, to show results -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+  <!-- add mocha framework code -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+  <script>
+    mocha.setup('bdd'); // minimal setup for Behaviour Driven Development
+  </script>
+  <!-- add chai -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+  <script>
+    // chai has a lot of stuff, let's make assert global
+    let assert = chai.assert;
+  </script>
+</head>
+
+<body>
+
+  <script>
+    function pow(x, n) {
+      return x ** n;
+    }
+  </script>
+
+  <!-- the script with tests (describe, it...) -->
+  <script>
+      describe('pow', function (){
+          before(() => console.log('Before all test executed.'));
+          after(() => console.log('After all test executed.'));
+          beforeEach(() => {});
+          afterEach(() => {});
+
+          it('raises number to n-th power', function(){
+              assert.equal(pow(2,3), 8);
+              assert.equal(pow(-2,3), -8);
+              assert.equal(pow(0,4), 0);
+              assert.equal(pow(55,1), 55);
+          });
+
+          it('returns NaN for string', function(){
+              assert.isNaN(pow('abc',1));
+              assert.isNaN(pow(1, 'abc'));
+          });
+      });
+  </script>
+
+  <!-- the element with id="mocha" will contain test results -->
+  <div id="mocha"></div>
+
+  <!-- run tests! -->
+  <script>
+    mocha.run();
+  </script>
+</body>
+
+</html>

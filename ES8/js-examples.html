@@ -4,11 +4,38 @@
             "use strict"; //turns off backward compatibility with obsolete features before ES5
                           //and promotes modern approach since ES5
 
-            let x = 1, y = '1';
+            alert('Examples write to the browser console.');
+
+            let x = 1, y = '1'; //global variables
             [
-                'Value and type match === is js flavour since the early beginings.',
+                "A strict equality operator === checks the equality without type conversion.",
+                 //backticks are enabler for expression embeding
                 `1 === '1' is ${x === y}, but 1 == '1' is ${x == y}`
-            ].forEach(alert);
+            ].forEach(console.log);
+
+            function writeExample(param="Default value") {
+                alert('This function is global. The param is:' + param);
+            }
+
+            //writeExample();
+
+            console.log(`typeof null: ${typeof null} //kept js error`);
+            console.log(`typeof undefined: ${typeof undefined}`);
+            console.log(`typeof 1.3: ${typeof 1.3}`);
+            console.log(`typeof true: ${typeof true}`);
+            console.log(`typeof 'a': ${typeof 'a'}`);
+            console.log(`typeof new String('a'): ${typeof new String('a')}`);
+            console.log(`typeof String(true): ${typeof String(true)}`); //explicit type conversion
+            console.log(`typeof new Date(): ${typeof new Date()}`);
+            console.log(`typeof Date: ${typeof Date}`);
+            console.log(`typeof Symbol("id"): ${typeof Symbol("id")}`);
+            console.log(`typeof alert: ${typeof alert}`);
+            console.log(`'2' + 2: ${'2' + 2}`); //implicit convertion to string
+            console.log(`null == undefined: ${null == undefined}`);
+            console.log(`null === undefined: ${null === undefined}`);
+
+            let name = prompt("What is your name?", "");
+            let confirmedName = confirm(`Is your name ${name}`);
         </script>
     </head>
     <body>
