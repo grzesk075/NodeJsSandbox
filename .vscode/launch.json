@@ -47,13 +47,19 @@
             "type": "node",
             "request": "launch",
             "name": "ES8 objects",
-            "program": "${workspaceFolder}/ES8/objects.js"
+            "program": "${workspaceFolder}/ES8/object-examples.js"
         },
         {
             "type": "node",
             "request": "launch",
             "name": "ES8 functions",
             "program": "${workspaceFolder}/ES8/function-examples.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "ES8 classes",
+            "program": "${workspaceFolder}/ES8/class-examples.js"
         }
     ]
 }
