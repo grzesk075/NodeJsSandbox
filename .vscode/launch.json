@@ -48,6 +48,12 @@
             "request": "launch",
             "name": "ES8 objects",
             "program": "${workspaceFolder}/ES8/objects.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "ES8 spread operator",
+            "program": "${workspaceFolder}/ES8/spread-operator-examples.js"
         }
     ]
 }
