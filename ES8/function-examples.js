@@ -31,3 +31,29 @@ let f = () => {};
 //global objects like window or global still are in the spec of ES8
 
 //all functions in js are clousures, because they remember their Outer Lexical Environment.
+
+//dynamically created function e.g. from code received from server
+//it's outer lexical environment is global lexical environment
+let func = new Function('a', 'b', 'return a + b');
+func.someNewProperty = f;
+func.someNewProperty();
+let s = func(1,2);
+console.log('func(1,2)=' + s);
+
+//you can also use call/apply to invole a function assigning context argument as this in function
+//addictionally you can use bind function to obtain a wrapper for a function with frozen context
+
+let obj = {
+    name : 'Paul',
+    printName : function() {
+        console.log('Print name: ' + this.name);
+    }
+}
+
+let user = {name: 'Peter'};
+
+obj.printName();
+obj.printName.apply(user);//in this call user becomes this as inner lexical context
+
+let wrappedPrintName = obj.printName.bind(user);
+wrappedPrintName();

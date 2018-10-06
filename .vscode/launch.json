@@ -52,8 +52,8 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "ES8 spread operator",
-            "program": "${workspaceFolder}/ES8/spread-operator-examples.js"
+            "name": "ES8 functions",
+            "program": "${workspaceFolder}/ES8/function-examples.js"
         }
     ]
 }
