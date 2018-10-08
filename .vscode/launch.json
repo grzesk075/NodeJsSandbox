@@ -60,6 +60,12 @@
             "request": "launch",
             "name": "ES8 classes",
             "program": "${workspaceFolder}/ES8/class-examples.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "ES8 promises",
+            "program": "${workspaceFolder}/ES8/promise-examples.js"
         }
     ]
 }
