@@ -29,3 +29,23 @@ promise.then(function anotherHendler(result) {
 // Methods then and catch can be used more than once.
 
 console.log('Waiting for promise to resolve.');
+
+
+
+// Fetch and text return promises.
+const fetch = require('node-fetch');
+
+fetch('https://www.yr.no/').then(response => response.text()).then(
+    result => console.log('Response html length: ' + result.length));
+
+
+// The same as above, but with async keyword.
+let getContentLengthDesc = async function() {
+    let response = await fetch('https://www.yr.no/'); // Await instead of then after fetch.
+    let text = await response.text(); // Another asynchronous call returning promise's result.
+
+    return 'Response html length: ' + text.length;
+    // Equivalent to return Promise.resolve('Response html length: ' + text.length);
+}
+
+getContentLengthDesc().then(console.log, onError);

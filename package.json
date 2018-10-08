@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "express": "latest",
-    "formidable": "latest"
+    "formidable": "latest",
+    "node-fetch": "latest"
   },
   "repository": {
     "type": "git",
