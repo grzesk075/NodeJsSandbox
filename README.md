@@ -1,6 +1,10 @@
 # NodeJsSandbox
 Node.js training code.
 
+Folder ES8 contains modern Javascript tutorial.
+
+Folder tutorials contains some better or worse  Node.js tutorials.
+
 Step by step notices from the learnig process.
 
 ## 1. Environment setup
@@ -56,3 +60,11 @@ The top IDEs for development of Node.js based web applications are:
 * Visual Studio Code from Microsoft (free),
 * Eclipse with nodeclipse plugin (free),
 * Cloud9 from Amazon (in cloud free for non-commercial use).
+
+## 3. Typescript
+Typescript must be installed globally, because the tsc program must be available. It's responsible for compiling typescript to javascript. This process of source to source compilation is called transpilling. The following command installs typescript globally, including code and executables.
+> npm install -g typescript
+
+> tsc -v
+
+Tsc is available next to the npm program and displays its version wit above command.
