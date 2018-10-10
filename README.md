@@ -67,4 +67,9 @@ Typescript must be installed globally, because the tsc program must be available
 
 > tsc -v
 
-Tsc is available next to the npm program and displays its version wit above command.
+Tsc is available next to the npm program and displays its version with above command.
+To compile ts to js use below command.
+
+> tsc myfile.ts
+
+
