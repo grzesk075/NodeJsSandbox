@@ -23,8 +23,17 @@ arr = ro as Array<number>; //also works
 interface SearchFunc {
     (source: string, substring: string): boolean;
 }
-
+// Function interface - function objects can match it
 let search: SearchFunc = function(source: string, substring: string): boolean {
     let s = source.search(substring);
     return s > -1;
 }
+
+// Indexable types.
+interface ReadonlyStringArray {
+    readonly [index: number]: string;
+}
+let roArray = ['abc','def'];
+// roArray[0] - index is a number
+
+
