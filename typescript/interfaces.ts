@@ -37,3 +37,35 @@ let roArray = ['abc','def'];
 // roArray[0] - index is a number
 
 
+// Extending interfaces and implementing classes.
+interface Animal {
+    name: string;
+}
+
+interface Noise {
+    sound(foneme: string): void;
+}
+
+interface Dog extends Animal, Noise {
+}
+
+class Basset implements Dog {
+    constructor(public name: string) {};
+
+    sound(foneme: string): void {
+        console.log( this.name + ' is barking ' + foneme);
+    };
+};
+
+let dog: Dog = new Basset('Tim');
+dog.sound('bow wow');
+
+let rex: Dog = <Dog>{};
+rex.name = 'Rex';
+rex.sound = function (foneme: string) {
+    console.log( this.name + ' is barking ' + foneme);
+}
+rex.sound('bow bow');
+
+let spike = {} as Dog; // In compilation phase all OK.
+//spike.sound(''); error in runtime
