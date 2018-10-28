@@ -69,3 +69,8 @@ rex.sound('bow bow');
 
 let spike = {} as Dog; // In compilation phase all OK.
 //spike.sound(''); error in runtime
+
+// Class concept, generally similar to Java.
+// Members are public by default. Private and protected modifiers work like in Java.
+// Keywords this and super also. Constructor of superclass must be invoked by super.
+// Static fields, overriding, overloading and virtual functions are similar to Java.
