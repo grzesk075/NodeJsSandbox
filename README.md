@@ -72,4 +72,7 @@ To compile ts to js use below command.
 
 > tsc myfile.ts
 
+To use require function in typescript, it's necassary to import @types/node module.
+The command as follows imports it and extends package.json file.
 
+> npm i @types/node

@@ -8,6 +8,7 @@
     "test": "echo OK"
   },
   "dependencies": {
+    "@types/node": "^10.12.5",
     "express": "latest",
     "formidable": "latest",
     "node-fetch": "latest"
