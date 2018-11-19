@@ -5,6 +5,8 @@ Folder ES8 contains modern Javascript tutorial.
 
 Folder tutorials contains some better or worse  Node.js tutorials.
 
+Folder typescript contains examples from official typescript guide.
+
 Step by step notices from the learnig process.
 
 ## 1. Environment setup
