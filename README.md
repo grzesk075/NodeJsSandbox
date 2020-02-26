@@ -5,6 +5,8 @@ Folder ES8 contains modern Javascript tutorial.
 
 Folder tutorials contains some better or worse  Node.js tutorials.
 
+Folder typescript contains examples from official typescript guide.
+
 Step by step notices from the learnig process.
 
 ## 1. Environment setup
@@ -72,4 +74,7 @@ To compile ts to js use below command.
 
 > tsc myfile.ts
 
+To use require function in typescript, it's necassary to import @types/node module.
+The command as follows imports it and extends package.json file.
 
+> npm i @types/node

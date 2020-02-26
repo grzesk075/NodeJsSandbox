@@ -66,6 +66,12 @@
             "request": "launch",
             "name": "ES8 promises",
             "program": "${workspaceFolder}/ES8/promise-examples.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "TS import",
+            "program": "${workspaceFolder}/typescript/module-import.js"
         }
     ]
 }
