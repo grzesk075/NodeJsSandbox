@@ -27,7 +27,7 @@ To maintain node.js version after first installation, you can use either `NVM` (
 You can always install newest version manually.
 
 ## 2. Node Package Manager
-To install globally (-g) available executable programs and libraries (packages) for application express generator type
+To install globally (-g) executable programs and libraries (packages) for application express generator type
 > npm install express-generator -g
 
 You can create sample app and run it with
@@ -39,7 +39,7 @@ You can create sample app and run it with
 
 > npm start
 
-Commands for: listing local packages, listing global packages, uninstall globally, initializing package.json, getting dependencies, testing, starting and stopping main file - are below (consecjutive).
+Commands for: listing local packages, listing global packages, uninstall globally, initializing new package.json file, getting locally dependencies described in package.json file, , testing, starting and stopping main file - are below (consecjutive).
 > npm ls
 
 > npm ls -g
@@ -61,6 +61,10 @@ Scripts named test, start and stop must be defined in package.json file.
 It's also possible to publish your package to the world and to make it searchable by `npm search` or more convinient way on [several pages like this one](http://npmsearch.com/). The license has to be public.
 
 You can also deploy your web application on cloud (e.g. Azure) or on Docker, or create desktop application with e.g. Electron framework.
+
+Files package.json and package-lock.json shoud be commited to VCS.
+Command `npm install` updates local packages and package-lock.json file.
+Command `npm ci` installes loclally packages in versions described in package-lock.json.
 
 The top IDEs for development of Node.js based web applications are:
 * WebStorm from JetBrains (paid),
