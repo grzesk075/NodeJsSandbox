@@ -21,6 +21,11 @@ REPL environment is available with `node` command (type .help for help).
 To run the JS file on V8 engine type
 > node main.js
 
+To maintain node.js version after first installation, you can use either `NVM` (Node Version Manager) or helper module called `n`.
+> npm install -g n
+
+You can always install newest version manually.
+
 ## 2. Node Package Manager
 To install globally (-g) available executable programs and libraries (packages) for application express generator type
 > npm install express-generator -g
